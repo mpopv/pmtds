@@ -1,5 +1,7 @@
 # pmtds
 
+Nested SCSS media queries made hella simple, yo.
+
 ## What The Heck is This
 
 I like to nest media queries inside elements in SCSS, but I was sick of writing out media queries for small responsive changes. **pmtds** is a mixin designed to alleviate the stress of nested media queries.
