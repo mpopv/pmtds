@@ -12,7 +12,7 @@ I like to nest media queries inside elements in SCSS, but I was sick of writing 
 
 ## What's With the Weird Name
 
-pmtds stands for *property*, *mobile*, *tablet*, *desktop*, and *superwide*. It's a shorthand to help you remember the mixin arguments.
+pmtds stands for `property`, `mobile`, `tablet`, `desktop`, and `superwide`. It's a shorthand to help you remember the mixin arguments.
 
 ## Okay Whatever How Do I Use It
 
