@@ -24,4 +24,8 @@ $mixin-desktop-min-width: 992px;
 $mixin-superwide-min-width: 1441px;
 ```
 
-Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmtd`, `pts`, `ptds`, etc. Make sure the number of arguments you pass through always equals the number of characters in the mixin name. The `property` argument is always required.
+Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmtd`, `pts`, `ptds`, etc.
+
+Make sure the number of arguments you pass through always equals the number of characters in the mixin name.
+
+The `property` argument is always required.
