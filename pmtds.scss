@@ -1,0 +1,38 @@
+$mixin-tablet-min-width: 768px;
+$mixin-desktop-min-width: 992px;
+$mixin-superwide-min-width: 1441px;
+
+@mixin pmtds ($property, $mobile, $tablet, $desktop, $superwide) {
+  #{$property}: $mobile;
+  @media (min-width: $mixin-tablet-min-width) { #{$property}: $tablet; }
+  @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
+  @media (min-width: $mixin-superwide-min-width) { #{$property}: $superwide; }
+}
+
+@mixin pmtd ($property, $mobile, $tablet, $desktop) {
+  #{$property}: $mobile;
+  @media (min-width: $mixin-tablet-min-width) { #{$property}: $tablet; }
+  @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
+}
+
+@mixin pmts ($property, $mobile, $tablet, $superwide) {
+  #{$property}: $mobile;
+  @media (min-width: $mixin-tablet-min-width) { #{$property}: $tablet; }
+  @media (min-width: $mixin-superwide-min-width) { #{$property}: $superwide; }
+}
+
+@mixin ptds ($property, $tablet, $desktop, $superwide) {
+  #{$property}: $tablet;
+  @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
+  @media (min-width: $mixin-superwide-min-width) { #{$property}: $superwide; }
+}
+
+@mixin pmt ($property, $mobile, $tablet) {
+  #{$property}: $mobile;
+  @media (min-width: $mixin-tablet-min-width) { #{$property}: $tablet; }
+}
+
+@mixin ptd ($property, $tablet, $desktop) {
+  #{$property}: $tablet;
+  @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
+}
