@@ -34,7 +34,9 @@ The `property` argument is always required.
 
 ## License
 
+```
 Copyright © 2016 Matt Popovich
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2.
 See the LICENSE file for more details.
+```
