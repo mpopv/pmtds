@@ -38,24 +38,9 @@ $mixin-superwide-min-width: 1441px;
   @media (min-width: $mixin-tablet-min-width) { #{$property}: $tablet; }
 }
 
-@mixin pmd ($property, $mobile, $desktop) {
-  #{$property}: $mobile;
-  @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
-}
-
-@mixin pms ($property, $mobile, $superwide) {
-  #{$property}: $mobile;
-  @media (min-width: $mixin-superwide-min-width) { #{$property}: $superwide; }
-}
-
 @mixin ptd ($property, $tablet, $desktop) {
   #{$property}: $tablet;
   @media (min-width: $mixin-desktop-min-width) { #{$property}: $desktop; }
-}
-
-@mixin pts ($property, $tablet, $superwide) {
-  #{$property}: $tablet;
-  @media (min-width: $mixin-superwide-min-width) { #{$property}: $superwide; }
 }
 
 @mixin pds ($property, $desktop, $superwide) {
