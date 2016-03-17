@@ -4,7 +4,7 @@ A mixin library to make SCSS media queries hella simple.
 
 ## What The Heck is This
 
-I like to nest media queries inside elements in SCSS, but I was sick of writing out media queries for small responsive changes, especially if I need multiple. **pmtds** is a mixin designed to alleviate the stress of nested media queries. Put up to three media queries on a single line. (Or edit this library and put sixty in on a single line. Do whatever the heck you want. I'm a README, not a cop.)
+I like to nest media queries inside elements in SCSS, but I was sick of writing out media queries for small responsive changes, especially if I need multiple. **pmtds** is a mixin designed to alleviate the stress of nested media queries. Put up to three media queries on a single line. (Or edit this library and put sixty on a single line. Do whatever the heck you want. I'm a README, not a cop.)
 
 ```scss
   div.responsive {
