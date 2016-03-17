@@ -31,3 +31,10 @@ Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmt
 Make sure the number of arguments you pass through always equals the number of characters in the mixin name.
 
 The `property` argument is always required.
+
+## License
+
+Copyright © 2016 Matt Popovich
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2.
+See the LICENSE file for more details.
