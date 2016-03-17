@@ -26,7 +26,7 @@ $mixin-desktop-min-width: 992px;
 $mixin-superwide-min-width: 1441px;
 ```
 
-Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmtd`, `pts`, `ptds`, etc.
+Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmtd`, `ptd`, `ptds`, etc. For single-breakpoint `@include`s, always use the two adjacent screen sizes (i.e. `pds` instead of `pts`).
 
 Make sure the number of arguments you pass through always equals the number of characters in the mixin name.
 
