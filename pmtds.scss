@@ -1,6 +1,6 @@
 $mixin-tablet-min-width: 768px;
 $mixin-desktop-min-width: 992px;
-$mixin-superwide-min-width: 1441px;
+$mixin-superwide-min-width: 1200px;
 
 @mixin pmtds ($property, $mobile, $tablet, $desktop, $superwide) {
   #{$property}: $mobile;
