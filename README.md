@@ -44,7 +44,7 @@ The `property` argument is always required.
 
 ### A:
 
-Properly gzipping your files should negate code size inflation to negilible levels, but use a plugin like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade -- pmtds works best with a low-specificity methodology like BEM or Atomic CSS.
+Properly gzipping your files should negate code size inflation to negilible levels, but you can also use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade -- pmtds works best with a low-specificity methodology like BEM or Atomic CSS.
 
 ## License
 
