@@ -2,7 +2,11 @@
 
 A mixin library to make SCSS media queries hella simple.
 
-## What The Heck is This
+## FAQ
+
+### Q: What the heck is this?
+
+### A:
 
 I like to nest media queries inside elements in SCSS, but I was sick of writing out media queries for small responsive changes, especially if I need multiple. **pmtds** is a mixin designed to alleviate the stress of nested media queries. Put up to three media queries on a single line. (Or edit this library and put sixty on a single line. Do whatever the heck you want. I'm a README, not a cop.)
 
@@ -12,11 +16,15 @@ I like to nest media queries inside elements in SCSS, but I was sick of writing 
   }
 ```
 
-## What's With the Weird Name
+### Q: What's with the weird name? Did you just randomly mash your keyboard?
+
+### A:
 
 pmtds stands for `property`, `mobile`, `tablet`, `desktop`, and `superwide`. It's a shorthand to help you remember the mixin arguments.
 
-## Okay Whatever How Do I Use It
+### Q: Okay, whatever, how do I use it?
+
+### A:
 
 First, set your breakpoints. They're the variables at the top.
 
@@ -31,6 +39,12 @@ Then, just `@include pmtds();`, or any combination of breakpoints you want--`pmt
 Make sure the number of arguments you pass through always equals the number of characters in the mixin name.
 
 The `property` argument is always required.
+
+### Q: Won't all these media queries inflate the size of the generated CSS?
+
+### A:
+
+Properly gzipping your files should negate code size inflation to negilible levels, but use a plugin like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade -- pmtds works best with a low-specificity methodology like BEM or Atomic CSS.
 
 ## License
 
