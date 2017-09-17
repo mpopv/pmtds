@@ -53,11 +53,5 @@ The `property` argument is always required.
 
 Warning: All these media queries may inflate your code size. Properly gzipping your files should negate most of the inflation, but you can also use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade -- pmtds works best with a low-specificity methodology like BEM or Atomic CSS.
 
-## License
-
-```
-Copyright © 2016 Matt Popovich
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2.
-See the LICENSE file for more details.
-```
+# License
+- [MIT](https://github.com/mpopv/pmtds/blob/master/LICENSE)
