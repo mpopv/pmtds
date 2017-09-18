@@ -4,7 +4,7 @@ A mixin library to make writing responsive CSS simple.
 
 ### About
 
-Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to alleviate that stress with as concise a syntax as possible..
+Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to alleviate that stress with as concise a syntax as possible.
 
 #### You write...
 ```scss
