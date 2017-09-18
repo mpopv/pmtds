@@ -40,9 +40,9 @@ You can also do any combination of breakpoints within that set -- pmtds stands f
 First, set your breakpoints, if they differ from the default Bootstrap breakpoints. They're the variables at the top.
 
 ```scss
-$mixin-sm-min-width: 768px;
-$mixin-md-min-width: 992px;
-$mixin-lg-min-width: 1200px;
+$mixin-sm-min-width: 576px;
+$mixin-md-min-width: 768px;
+$mixin-lg-min-width: 992px;
 ```
 
 Then, just `@include pmtds();`, or any combination of breakpoints you want--`pxsm`, `psm`, `psml`, etc. For single-breakpoint `@include`s, always use the two adjacent screen sizes.
