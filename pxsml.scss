@@ -1,0 +1,49 @@
+$mixin-sm-min-width: 768px;
+$mixin-md-min-width: 992px;
+$mixin-lg-min-width: 1200px;
+
+@mixin pxsml ($property, $xs, $sm, $md, $lg) {
+  #{$property}: $xs;
+  @media (min-width: $mixin-sm-min-width) { #{$property}: $sm; }
+  @media (min-width: $mixin-md-min-width) { #{$property}: $md; }
+  @media (min-width: $mixin-lg-min-width) { #{$property}: $lg; }
+}
+
+@mixin pxsm ($property, $xs, $sm, $md) {
+  #{$property}: $xs;
+  @media (min-width: $mixin-sm-min-width) { #{$property}: $sm; }
+  @media (min-width: $mixin-md-min-width) { #{$property}: $md; }
+}
+
+@mixin pxsl ($property, $xs, $sm, $lg) {
+  #{$property}: $xs;
+  @media (min-width: $mixin-sm-min-width) { #{$property}: $sm; }
+  @media (min-width: $mixin-lg-min-width) { #{$property}: $lg; }
+}
+
+@mixin pxml ($property, $xs, $md, $lg) {
+  #{$property}: $xs;
+  @media (min-width: $mixin-md-min-width) { #{$property}: $md; }
+  @media (min-width: $mixin-lg-min-width) { #{$property}: $lg; }
+}
+
+@mixin psml ($property, $sm, $md, $lg) {
+  #{$property}: $sm;
+  @media (min-width: $mixin-md-min-width) { #{$property}: $md; }
+  @media (min-width: $mixin-lg-min-width) { #{$property}: $lg; }
+}
+
+@mixin pxs ($property, $xs, $sm) {
+  #{$property}: $xs;
+  @media (min-width: $mixin-sm-min-width) { #{$property}: $sm; }
+}
+
+@mixin psm ($property, $sm, $md) {
+  #{$property}: $sm;
+  @media (min-width: $mixin-md-min-width) { #{$property}: $md; }
+}
+
+@mixin pml ($property, $md, $lg) {
+  #{$property}: $md;
+  @media (min-width: $mixin-lg-min-width) { #{$property}: $lg; }
+}
