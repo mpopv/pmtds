@@ -1,0 +1,26 @@
+{
+  "name": "pxsmlx",
+  "version": "0.1.0",
+  "description": "An adaptable, concise SCSS mixin library for generating nested media queries.",
+  "main": "./pxsmlx.scss",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpopv/pxsmlx.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "mixins",
+    "media",
+    "queries"
+  ],
+  "author": "Matt Popovich <mattpopovich@outlook.com> (http://mattpopovich.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpopv/pxsmlx/issues"
+  },
+  "homepage": "https://github.com/mpopv/pxsmlx#readme"
+}
