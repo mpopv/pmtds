@@ -53,7 +53,7 @@ Do you nest media queries inside elements in SCSS, but get sick of writing out m
   @import 'pxsmlx';
 
   // without Webpack
-  @import 'node_modules/pxsmlx';
+  @import 'path/to/project/root/node_modules/pxsmlx';
 ```
 
 pxsmlx stands for `property`, `xs`, `sm`, `md`, `lg`, and `xl`. It's a shorthand to help you remember the mixin arguments. You can use any combination of breakpoints within that set: `pxsm`, `psm`, `psmlx`, etc.
