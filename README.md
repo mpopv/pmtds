@@ -8,7 +8,7 @@ A mixin library to make writing responsive CSS simple.
 
 Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to reduce that work by condensing it down to as concise a syntax as possible, by baking in some assumptions.
 
-pxsmlx is opinionated—it only uses min-width queries and Bootstrap breakpoints. But it allows you to write complex sets of media queries much more quickly.
+pxsmlx is opinionated — it only uses min-width queries and Bootstrap breakpoints. But it allows you to write complex sets of media queries much more quickly.
 
 ```scss
   // You write...
@@ -67,7 +67,7 @@ $mixin-xl-min-width: 1200px;
 
 ### Note
 
-This library adds single-selector media queries, which can inflate your code size. Properly gzipping your files should negate most of the inflation, but you can also use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade -- pxsmlx works best with a low-specificity methodology like BEM or Atomic CSS.
+This library adds single-selector media queries, which can inflate your code size. Properly gzipping your files should negate most of the inflation, but you can also use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade — pxsmlx works best with a low-specificity methodology like BEM or Atomic CSS.
 
 ### License
 - [MIT](https://github.com/mpopv/pxsmlx/blob/master/LICENSE)
