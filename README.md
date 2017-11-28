@@ -6,7 +6,9 @@ A mixin library to make writing responsive CSS simple.
 
 ### About
 
-Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to reduce that work by condensing it down to as concise a syntax as possible.
+Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to reduce that work by condensing it down to as concise a syntax as possible, by baking in some assumptions.
+
+pxsmlx is opinionated—it only uses min-width queries and Bootstrap breakpoints. But it allows you to write complex sets of media queries much more quickly.
 
 ```scss
   // You write...
