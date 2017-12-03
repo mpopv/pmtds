@@ -67,7 +67,7 @@ $mixin-xl-min-width: 1200px;
 
 ### Note
 
-This library adds single-selector media queries, which can inflate your code size. Properly gzipping your files should negate most of the inflation, but you can also use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade — pxsmlx works best with a low-specificity methodology like BEM or Atomic CSS.
+This library adds media queries that contain a single selector, which may inflate the size of your CSS versus combining them. Available evidence, however, indicates that if you serve your files with Gzip [the difference is negligible](https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/) because of the repetitive nature of media queries allowing Gzip to mostly nullify their weight. If you're still concerned, you can use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine media queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade, instead of using a low-specificity methodology like BEM or Atomic CSS (which is recommended). Ultimately, the most efficient way to use pxsmlx should be selectively when you need to inject a set of breakpoint styles for a single property here and there. If you're changing several properties at once, you're probably better off writing a normal media query rather than including a pxsmlx mixin several times in a row.
 
 ### License
 - [MIT](https://github.com/mpopv/pxsmlx/blob/master/LICENSE)
