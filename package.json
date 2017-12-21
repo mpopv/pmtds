@@ -1,6 +1,6 @@
 {
   "name": "pxsmlx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An adaptable, concise SCSS mixin library for generating nested media queries.",
   "main": "_pxsmlx.scss",
   "scripts": {
