@@ -50,8 +50,12 @@ pxsmlx is opinionated — it only uses min-width queries and Bootstrap breakpoin
 
 ### Usage
 
-```bash
-  @import '~/node_modules/pxsmlx/pxsmlx';
+```scss
+  // with webpack
+  @import 'pxsmlx/pxsmlx';
+
+  // without webpack
+  @import '../../path/to/node_modules/pxsmlx/pxsmlx';
 ```
 
 pxsmlx stands for `property`, `xs`, `sm`, `md`, `lg`, and `xl`. It's a shorthand to help you remember the mixin arguments. You can use any combination of breakpoints within that set: `pxsm`, `psm`, `psmlx`, etc.
