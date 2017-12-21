@@ -71,7 +71,7 @@ This library adds media queries that contain a single selector, which may inflat
 
 If you're still concerned, you can use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine media queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade, instead of using a low-specificity methodology like BEM or Atomic CSS (which is recommended).
 
-Ultimately, the most efficient way to use pxsmlx should be selectively when you need to inject a set of breakpoint styles for a single property here and there. If you're changing several properties at once, you're probably better off writing a normal media query rather than including a pxsmlx mixin several times in a row.
+Ultimately, you have to determine whether the extra bytes are a tradeoff worth making. You may find that the most efficient way to use pxsmlx is selectively, when you need to inject a set of breakpoint styles for a single property here and there. If you're changing several properties at once, you may be better off writing a normal media query rather than including a pxsmlx mixin several times in a row.
 
 ### License
 - [MIT](https://github.com/mpopv/pxsmlx/blob/master/LICENSE)
