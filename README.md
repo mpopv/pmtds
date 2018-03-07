@@ -45,7 +45,7 @@ pxsmlx is opinionated — it only uses min-width queries and Bootstrap breakpoin
 ### Installation
 
 ```bash
-  $ npm i pxsmlx
+  $ npm i -D pxsmlx
 ```
 
 ### Usage
