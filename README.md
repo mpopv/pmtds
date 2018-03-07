@@ -69,13 +69,13 @@ $mixin-lg-min-width: 1200px;
 $mixin-xl-min-width: 1440px;
 ```
 
-### A note about code size
+### A note about nesting media queries
 
 This library adds media queries that contain a single selector, which may inflate the size of your CSS versus combining them. Available evidence, however, indicates that if you serve your files with Gzip [the difference is negligible](https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/) because of the repetitive nature of media queries allowing Gzip to mostly nullify their weight.
 
-If you're still concerned, you can use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine media queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade, instead of using a low-specificity methodology like BEM or Atomic CSS (which is recommended).
+If you're still concerned, you can use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine media queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade, instead of using a low-specificity methodology like BEM or Atomic CSS.
 
-Ultimately, you have to determine whether the extra bytes are a tradeoff worth making. You may find that the most efficient way to use pxsmlx is selectively, when you need to inject a set of breakpoint styles for a single property here and there. If you're changing several properties at once, you may be better off writing a normal media query rather than including a pxsmlx mixin several times in a row.
+Ultimately, you have to determine whether this tradeoff is worth it. pxsmlx is an ideal surgical tool for a component-based design pattern. But it can be abused if you're unnecessarily peppering it throughout a single long Sass file. In that use case, you may find that the most efficient way to use pxsmlx is sparingly alongside normal media queries, when you need to inject a set of breakpoint styles for a single property here and there.
 
 ### License
 - [MIT](https://github.com/mpopv/pxsmlx/blob/master/LICENSE)
