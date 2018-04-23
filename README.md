@@ -69,13 +69,9 @@ $mixin-lg-min-width: 1200px;
 $mixin-xl-min-width: 1440px;
 ```
 
-### A note about nesting media queries
+### Nesting and merging media queries
 
-This library adds media queries that contain a single selector, which may inflate the size of your CSS versus combining them. Available evidence, however, indicates that if you serve your files with Gzip [the difference is negligible](https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/) because of the repetitive nature of media queries allowing Gzip to mostly nullify their weight.
-
-If you're still concerned, you can use a tool like [PostCSS MQPacker](https://github.com/hail2u/node-css-mqpacker) to combine media queries at compile time. This may cause problems if you're doing a lot of overwriting down the cascade, instead of using a low-specificity methodology like BEM or Atomic CSS.
-
-Ultimately, you have to determine whether this tradeoff is worth it. pxsmlx is an ideal surgical tool for a component-based design pattern. But it can be abused if you're unnecessarily peppering it throughout a single long Sass file. In that use case, you may find that the most efficient way to use pxsmlx is sparingly alongside normal media queries, when you need to inject a set of breakpoint styles for a single property here and there.
+This library adds many media queries that contain a single selector, which may inflate the size of your CSS versus manually combining them. If you serve your files with Gzip [the difference will probably be small](https://benfrain.com/inline-or-combined-media-queries-in-sass-fight/), although you can also use tools like [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker) or [clean-css](https://github.com/jakubpawlowicz/clean-css)'s `mergeMedia` to combine media queries at compile time.
 
 ### License
 - [MIT](https://github.com/mpopv/pxsmlx/blob/master/LICENSE)
