@@ -8,7 +8,7 @@ A mixin library to make writing responsive CSS simple.
 
 Do you nest media queries inside elements in SCSS, but get sick of writing out media queries for small responsive changes, especially if you need multiple? This is a set of mixins designed to reduce that work by condensing it down to as concise a syntax as possible, by baking in some assumptions.
 
-pxsmlx is opinionated — it only uses min-width queries and Bootstrap breakpoints (plus an extra one at 1440px). But it allows you to write complex sets of media queries much more quickly.
+pxsmlx is opinionated — it only uses min-width queries and Bootstrap 3 breakpoints (plus an extra one at 1440px). But it allows you to write complex sets of media queries much more quickly.
 
 ```scss
   // You write...
@@ -60,7 +60,7 @@ pxsmlx is opinionated — it only uses min-width queries and Bootstrap breakpoin
 
 pxsmlx stands for `property`, `xs`, `sm`, `md`, `lg`, and `xl`. It's a shorthand to help you remember the mixin arguments. You can use any combination of breakpoints within that set: `pxsm`, `psm`, `psmlx`, etc.
 
-First, set your breakpoints, if they differ from the default Bootstrap breakpoints. They're the variables at the top.
+First, set your breakpoints, if they differ from the default Bootstrap 3 breakpoints. They're the variables at the top.
 
 ```scss
 $mixin-sm-min-width: 768px;
