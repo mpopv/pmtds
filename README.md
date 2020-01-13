@@ -1,5 +1,7 @@
 ## pxsmlx
 
+![npm](https://img.shields.io/npm/v/pxsmlx) ![NPM](https://img.shields.io/npm/l/pxsmlx) ![npm](https://img.shields.io/npm/dt/pxsmlx)
+
 *ˈpɪks mɪlks'*
 
 A mixin library to make writing responsive CSS simple.
