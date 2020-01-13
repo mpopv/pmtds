@@ -1,6 +1,6 @@
 ## pxsmlx
 
-![npm](https://img.shields.io/npm/v/pxsmlx) ![NPM](https://img.shields.io/npm/l/pxsmlx) ![npm](https://img.shields.io/npm/dt/pxsmlx)
+![npm](https://img.shields.io/npm/v/pxsmlx) ![NPM](https://img.shields.io/npm/l/pxsmlx) ![npm](https://img.shields.io/npm/dt/pxsmlx) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/pxsmlx)
 
 *ˈpɪks mɪlks'*
 
