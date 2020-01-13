@@ -1,8 +1,8 @@
 
-$mixin-sm-min-width: 576px;
-$mixin-md-min-width: 768px;
-$mixin-lg-min-width: 992px;
-$mixin-xl-min-width: 1200px;
+$mixin-sm-min-width: 768px;
+$mixin-md-min-width: 992px;
+$mixin-lg-min-width: 1200px;
+$mixin-xl-min-width: 1440px;
 
 @mixin pxsml ($property, $xs, $sm, $md, $lg) {
   #{$property}: $xs;
